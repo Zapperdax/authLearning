@@ -78,6 +78,7 @@ app.post("/register", function(req,res){
             });
         }
     });
+});    
 
     // bcrypt.hash(req.body.password, saltRounds, function(err, hash){
     //     const newUser = new User({
@@ -92,7 +93,6 @@ app.post("/register", function(req,res){
     //         }
     //     });
     // });
-});
 
 app.post("/login", function(req,res){
     
@@ -111,7 +111,8 @@ app.post("/login", function(req,res){
             });
         }
     })
-    
+});
+
     // const username = req.body.username;
     // const password = req.body.password;
     // User.findOne({email: username}, function(err, foundUser){
@@ -131,8 +132,6 @@ app.post("/login", function(req,res){
     //         }
     //     }
     // });
-});
-
 app.listen(2533, function(){
     console.log("Server Started At Port 2533");
-})
+});
